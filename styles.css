@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input,
+select,
+textarea,
+button,
+label {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+}
+
+label {
+  display: inline-block;
+  width: 6em;
+  background-color: #f1f1f1;
+  border: 1px solid rgb(15, 15, 71);
+  padding: 2px;
+  margin: 4px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 15, 71);
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  position: absolute;
+  left: 5px;
+  height: 75px;
+  width: 75px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  position: relative;
+  width: 300px;
+  border: 2px solid rgb(15, 15, 71);
+  padding: 10px;
+  margin-bottom: 4px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+fieldset > select {
+  text-align: center;
+}
+
+legend {
+  font-weight: bold;
+  color: rgb(15, 15, 71);
+}

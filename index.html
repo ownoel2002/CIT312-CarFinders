@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Finders Inc.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="carfinders.png" alt="Car Finders"/>
+        <h1>Your Ideal Car</h1>
+    </header>
+    <article>
+        <form id="idealcar" action="#" method="get">
+            <fieldset>
+                <legend>Choose a Manufacturer</legend>
+                <!-- choose a manufacturer -->
+                <select id="manufacturer" name="manufacturer" size="8" style="width: 150px">
+                    <optgroup label="American">
+                        <option value="buick">Buick</option>
+                        <option value="cadillac">Cadillac</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="chrysler">Chrysler</option>
+                        <option value="dodge">Dodge</option>
+                        <option value="ford">Ford</option>
+                        <option value="gmc">GMC</option>
+                        <option value="jeep">Jeep</option>
+                        <option value="lincoln">Lincoln</option>
+                        <option value="ram">Ram</option>
+                    </optgroup>
+                    <optgroup label="Japanese">
+                        <option value="acura">Acura</option>
+                        <option value="honda">Honda</option>
+                        <option value="infiniti">Infiniti</option>
+                        <option value="lexus">Lexus</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="toyota">Toyota</option>
+                    </optgroup>
+                    <optgroup label="Korean">
+                        <option value="genesis">Genesis</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="kia">Kia</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Transmission</legend>
+                <!-- transmission options -->
+                <label for="manualTransmissionChoice">Manual</label>
+                <input
+                type="radio"
+                id="manualTransmission"
+                name="transmission"
+                value="manualTransmission"
+                />
+                <br />
+
+                <label for="automaticTransmissionChoice">Automatic</label>
+                <input
+                type="radio"
+                id="automaticTransmission"
+                name="transmission"
+                value="automaticTransmission"
+                />
+            </fieldset>
+
+                <!-- drivetrain options -->
+            <fieldset>
+                <legend>Drivetrain</legend>
+                <label for="FWD">FWD</label>
+                <input
+                type="checkbox"
+                id="FWD"
+                name="FWD"
+                value="FWD"
+                /><br />
+
+                <label for="AWD">AWD</label>
+                <input
+                type="checkbox"
+                id="AWD"
+                name="AWD"
+                value="AWD"
+                /><br />
+
+                <label for="4WD">4WD</label>
+                <input
+                type="checkbox"
+                id="4WD"
+                name="4WD"
+                value="4WD"
+                /><br>
+
+                <label for="RWD">RWD</label>
+                <input
+                type="checkbox"
+                id="RWD"
+                name="RWD"
+                value="RWD"
+                /><br>
+            </fieldset>
+
+            <!-- choose features -->
+            <fieldset>
+                <legend>Features</legend>
+                    <select id="features" name="features" size="8" style="width: 220px;" multiple>
+                        <option value="adaptivecruise">Adaptive Cruise Control</option>
+                        <option value="adaptiveheadlights">Adaptive Headlights</option>
+                        <option value="androidauto">Android Auto</option>
+                        <option value="carplay">Apple CarPlay</option>
+                        <option value="backupcam">Backup Camera</option>
+                        <option value="blindspotmonitor">Blind Spot Monitoring</option>
+                        <option value="forwardcollisionwarning">Forward Collision Warning</option>
+                        <option value="heatedseats">Heated Seats</option>
+                        <option value="heatedsteeringwheel">Heated Steering Wheel</option>
+                        <option value="lanedeparturewarning">Lane Departure Warning</option>
+                        <option value="navsystem">Navigation System</option>
+                        <option value="remotestart">Remote Start</option>
+                        <option value="tractioncontrol">Traction Control</option>
+                    </select>
+            </fieldset>
+
+            <!-- choose a color -->
+            <fieldset>
+                <legend>Color</legend>
+                <input type="color" id="vehicleColor" name="vehicleColor" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional information</legend>
+                <!-- license -->
+                <label for="customerName">License</label>
+                <input
+                    type="text"
+                    id="license"
+                    name="license"
+                    placeholder="license"
+                    size="18"
+                    required
+                    minlength="1"
+                    maxlength="40"
+                    pattern="[a-zA-Z]+([\s][a-zA-Z]+)*"
+                />
+
+                <!-- comments -->
+                <label for="customerComments">Comments</label>
+                    <textarea id="customerComments" name="customerComments" placeholder="Leave any comments here"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Finished?</legend>
+                <input type="submit" id="process" value="Submit Form" />
+            </fieldset>
+        </form>
+    </article>
+</body>
+</html>
